@@ -500,7 +500,7 @@ rewrite (?i)%s$ / break;
 
 		return fmt.Sprintf(`
 rewrite (?i)%s(.*) %s/$1 break;
-rewrite (?i)%s$ %s/ break;
+rewrite (?i)%s$ %s break;
 %v%v %s%s;
 %v`, path, location.Rewrite.Target, location.Path, location.Rewrite.Target, xForwardedPrefix, proxyPass, proto, upstreamName, abu)
 	}
