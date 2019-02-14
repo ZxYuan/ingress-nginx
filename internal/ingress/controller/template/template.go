@@ -340,7 +340,8 @@ func buildLocation(input interface{}, enforceRegex bool) string {
 
 	path := location.Path
 	if enforceRegex {
-		return fmt.Sprintf(`~* "^%s"`, path)
+		//return fmt.Sprintf(`~* "^%s"`, path)
+		return fmt.Sprintf(`= %s`, path)
 	}
 	return path
 }
