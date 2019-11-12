@@ -12,7 +12,7 @@ local ewma = require("balancer.ewma")
 -- measured in seconds
 -- for an Nginx worker to pick up the new list of upstream peers
 -- it will take <the delay until controller POSTed the backend object to the Nginx endpoint> + BACKENDS_SYNC_INTERVAL
-local BACKENDS_SYNC_INTERVAL = 3
+local BACKENDS_SYNC_INTERVAL = 6
 
 local DEFAULT_LB_ALG = "round_robin"
 local IMPLEMENTATIONS = {
