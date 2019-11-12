@@ -688,8 +688,8 @@ http {
             deny all;
 
             # this should be equals to configuration_data dict
-            client_max_body_size                    10m;
-            client_body_buffer_size                 10m;
+            client_max_body_size                    100m;
+            client_body_buffer_size                 100m;
             proxy_buffering                         off;
 
             content_by_lua_block {
